@@ -21,13 +21,7 @@ const images = [
 const galerryRef = document.getElementById('gallery');
 galerryRef.classList.add('galary')
 
-images.forEach((el)=>{
-  const gelerryLi=document.createElement('li')
-  gelerryLi.classList.add('galary-item')
-  const img = document.createElement('img')
-  img.classList.add('galaryimg')
+images.map((el)=>{
+  galerryRef.insertAdjacentHTML('afterbegin',`<li><img class="galaryimg" src=${el.url} alt=${el.alt}></li>`)
   
-  img.alt = el.alt
-  galerryRef.append(gelerryLi)
-  gelerryLi.append(img)
 })
