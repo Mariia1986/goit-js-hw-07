@@ -8,9 +8,9 @@ renderRef.addEventListener('click', renderHendl)
 destroyRef.addEventListener('click',removeHendl)
 
 const createBoxes= function(amount){
-    let x=30
+    let x=20
     for(let i=1; i<=amount; i+=1){
-       x+=30;
+       x+=10;
     const div=document.createElement('div')
     div.classList.add('new-box')
      div.style.border="2px solid blue"  
