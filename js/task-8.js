@@ -12,7 +12,7 @@ const createBoxes = function (amount) {
   for (let i = 1; i <= amount; i += 1) {
     x += 10;
     const div = document.createElement('div');
-     
+
     div.classList.add('new-box');
     div.style.border = '2px solid blue';
     div.style.width = x + 'px';
@@ -21,14 +21,11 @@ const createBoxes = function (amount) {
     div.style.background =
       '#' +
       (Math.random().toString(16) + '000000').substring(2, 8).toUpperCase();
-      arr.push(div)
-    
+    arr.push(div);
   }
-  
- divRef.append(...arr);
+
+  divRef.append(...arr);
 };
-
-
 
 function renderHendl() {
   createBoxes(amountRef.value);
