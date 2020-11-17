@@ -8,14 +8,11 @@ const ingredients = [
 ];
 
 const ulRef = document.getElementById('ingredients');
-const liArr=[]
-ingredients.forEach(el => {
-  
+const liArr = [];
+ingredients.map(el => {
   const liEl = document.createElement('li');
-  
-  liArr.push(liEl)
+  liArr.push(liEl);
   liEl.textContent = el;
 });
-console.log(liArr.join(''))
 
-// ulRef.append(liArr)
+liArr.map(el => ulRef.append(el));
