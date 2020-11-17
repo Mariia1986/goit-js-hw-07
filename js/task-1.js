@@ -1,8 +1,7 @@
+const liRef = document.querySelectorAll('.item');
 
-const liRef = document.querySelectorAll('.item')
-
-liRef.forEach((el, i, arr)=>{
-    console.log(`В списке ${arr.length} категории`);
-    console.log(`Категория: ${el.firstElementChild.textContent}`)
-    console.log(`Количество элементов: ${el.lastElementChild.childElementCount}`)
-})
+console.log(`В списке ${liRef.length} категории`);
+liRef.forEach((el, i, arr) => {
+  console.log(`Категория: ${el.firstElementChild.textContent}`);
+  console.log(`Количество элементов: ${el.lastElementChild.childElementCount}`);
+});
