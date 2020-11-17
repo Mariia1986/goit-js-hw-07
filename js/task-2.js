@@ -15,4 +15,4 @@ ingredients.map(el => {
   liEl.textContent = el;
 });
 
-liArr.map(el => ulRef.append(el));
+ ulRef.append(...liArr);

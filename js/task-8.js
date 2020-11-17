@@ -24,8 +24,8 @@ const createBoxes = function (amount) {
       arr.push(div)
     
   }
-  console.log(arr)
- arr.map((el)=>divRef.append(el));
+  
+ divRef.append(...arr);
 };
 
 
