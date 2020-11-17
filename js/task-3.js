@@ -1,5 +1,3 @@
-
-
 const images = [
   {
     url:
@@ -19,9 +17,13 @@ const images = [
 ];
 
 const galerryRef = document.getElementById('gallery');
-galerryRef.classList.add('galary')
+const newArr = [];
+galerryRef.classList.add('galary');
 
-images.map((el)=>{
-  galerryRef.insertAdjacentHTML('afterbegin',`<li><img class="galaryimg" src=${el.url} alt=${el.alt}></li>`)
-  
-})
+images.map(el => {
+  newArr.push(
+    (el = `<li><img class="galaryimg" src=${el.url} alt=${el.alt}></li>`),
+  );
+});
+
+galerryRef.insertAdjacentHTML('afterbegin', newArr.join(''));
