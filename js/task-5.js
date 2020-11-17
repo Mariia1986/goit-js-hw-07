@@ -5,9 +5,9 @@ inputNameRef.addEventListener("input", handlerInpName)
 
 function handlerInpName(event){
     
-    inputNameRef.value === '' ? 
-    outputNameRef.textContent='незнакомец' 
-    : outputNameRef.textContent = event.target.value; }
+    outputNameRef.textContent=inputNameRef.value === '' ? 
+    'незнакомец' 
+    : event.target.value; }
 
 
 
